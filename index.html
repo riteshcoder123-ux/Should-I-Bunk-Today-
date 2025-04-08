@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Should I Bunk Today?</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-wrapper">
+    <div class="glass-card">
+      <h1>🎓 Should I Bunk Today?</h1>
+      <p class="subtext">Your attendance fate is just a click away.</p>
+
+      <div class="inputs">
+        <input type="number" id="total" placeholder="📘 Total Classes" />
+        <input type="number" id="attended" placeholder="✅ Classes Attended" />
+        <input type="number" id="required" placeholder="📏 Required Attendance (%)" value="75" />
+        <button onclick="calculateAttendance()">Check Now ➡️</button>
+      </div>
+
+      <div id="resultBox" class="result hidden">Let’s calculate that for you...</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
